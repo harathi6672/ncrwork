@@ -17,7 +17,7 @@ int main() {
 		j++;
 	}
 	*(string1 + i) = '\0';
-	printf("%s\n", string1);
+	printf("concatenation of string1 and string2 is %s\n", string1);
 	getch();
 	return 0;
 }

@@ -16,7 +16,7 @@ int main() {
 
 	}
 	*(str2 + j) = '\0';
-	printf("%s\n", str2);
+	printf("Reversed string is %s\n", str2);
 	getch();
 	return 0;
 
