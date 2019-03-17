@@ -1,0 +1,72 @@
+<script src="E:\jquery-3.3.1.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#checkbox").change(function () {
+            //$("#checkbox").toggle();
+            //$('#checkbox').prop('disabled',this.checked);
+            $("#hno1").val(hno.value);
+            $("#street1").val(street.value);
+            $("#landmark1").val(landmark.value);
+            $("#s2").val(s1.value);
+            $("#state1").val(state.value);
+            $("#pincode1").val(pincode.value);
+            
+
+        })
+
+    });
+</script>
+
+
+
+<HTML>
+<HEAD>
+<META NAME="GENERATOR" Content="Microsoft Visual Studio">
+<TITLE></TITLE>
+</HEAD>
+<BODY>
+    <form >
+    <h1>Present Address</h1>
+    H.No  <input id="hno" type="text" /><br /><br />
+    Street <input id="street" type="text" /><br /><br />
+    Landmark <input id="landmark" type="text" /><br /><br />
+    Mandal  
+                                                   <select id="s1">
+                                                       <option value="serilingampally">Serilingampally</option>
+                                                       <option value="Jinnaram">Jinnaram</option>
+                                                       <option value="Somajiguda">Somajiguda</option>
+                                                       <option value="Balanagar">Balanagar</option>
+                                                   </select>
+    <br /><br />
+
+    State <input id="state" type="text" /><br /><br />
+    Pincode <input id="pincode" type="text" /><br /><br />
+    <input id="checkbox" type="checkbox" />Same as present address <br />
+        </form>
+    <form>
+        <h1>Temporary Address</h1>
+        H.No  <input id="hno1" type="text" /><br /><br />
+        Street <input id="street1" type="text" /><br /><br />
+        Landmark <input id="landmark1" type="text" /><br /><br />
+        Mandal
+        <select id="s2">
+            <option value="serilingampally">Serilingampally</option>
+            <option value="Jinnaram">Jinnaram</option>
+            <option value="Somajiguda">Somajiguda</option>
+            <option value="Balanagar">Balanagar</option>
+        </select>
+        <br /><br />
+
+        State <input id="state1" type="text" /><br /><br />
+        Pincode <input id="pincode1" type="text" /><br /><br />
+        
+
+
+    </form>
+
+
+
+
+
+</BODY>
+</HTML>

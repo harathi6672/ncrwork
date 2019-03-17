@@ -1,0 +1,64 @@
+<script src="E:\jquery-3.3.1.js"></script>
+<script>
+    $(document).ready(function () {
+        //$("button")
+        //$("#hide").click(function () {
+        //    $("#form1").hide();
+        //});
+        //$("#show").click(function () {
+        //    $("#form1").show();
+        //});
+        $("#btn").click(function () {
+
+            var lable = $("#btn").attr("value");
+
+            //alert(lable);
+
+            if (lable == "Show") {
+                $("#btn").attr("value", "Hide");
+                $("#form1").show();
+            }
+            else {
+                $("#btn").attr("value", "Show");
+                $("#form1").hide();
+            }
+
+        });
+
+
+    });
+
+</script>
+
+
+<HTML>
+<HEAD>
+<META NAME="GENERATOR" Content="Microsoft Visual Studio">
+<TITLE></TITLE>
+</HEAD>
+<BODY>
+    <form id="form1">
+        H.No  <input id="hno" type="text" /><br /><br />
+        Street <input id="street" type="text" /><br /><br />
+        Landmark <input id="landmark" type="text" /><br /><br />
+        Mandal
+        <select id="s1">
+            <option value="serilingampally">Serilingampally</option>
+            <option value="Jinnaram">Jinnaram</option>
+            <option value="Somajiguda">Somajiguda</option>
+            <option value="Balanagar">Balanagar</option>
+        </select>
+        <br /><br />
+
+        State <input id="state" type="text" /><br /><br />
+        Pincode <input id="pincode" type="text" /><br /><br />
+
+
+    </form>
+    <input type="button" id="btn"value="hide"></input>
+    <!--<button id="show">Show</button>-->
+
+
+
+</BODY>
+</HTML>

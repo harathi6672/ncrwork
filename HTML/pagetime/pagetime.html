@@ -1,0 +1,25 @@
+<HTML>
+<HEAD>
+<META NAME="GENERATOR" Content="Microsoft Visual Studio">
+<TITLE></TITLE>
+</HEAD>
+<BODY>
+    <p id="p1" onclick="getTime()">calculate load time</p>
+    <p id="p2"></p>
+    <script>
+        function getTime() {
+            //var now = new Date().getTime();
+            //var t = performance.timing.navigationStart;
+            //var w = now - t;
+            //document.getElementById("p2").innerHTML = "load time is" + w;
+            var loadTime = window.performance.timing.domContentLoadedEventEnd - window.performance.timing.navigationStart;
+            //alert(loadTime);
+            document.getElementById("p2").innerHTML = "load time is" + loadTime;
+
+        }
+        }
+    </script>
+
+
+</BODY>
+</HTML>
